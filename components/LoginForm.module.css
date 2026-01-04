@@ -65,9 +65,9 @@
 }
 
 .logoImage {
-    border-radius: var(--radius-lg);
-    filter: drop-shadow(0 0 30px rgba(212, 168, 83, 0.4));
     margin-bottom: var(--space-md);
+    max-width: 100%;
+    height: auto;
 }
 
 .logoText {

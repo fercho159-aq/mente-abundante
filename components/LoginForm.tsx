@@ -70,12 +70,11 @@ export default function LoginForm() {
                     <Image
                         src="/logo.png"
                         alt="Mente Abundante"
-                        width={120}
-                        height={120}
+                        width={200}
+                        height={200}
                         className={styles.logoImage}
                         priority
                     />
-                    <h1 className={styles.logoText}>Mente Abundante</h1>
                 </div>
 
                 {/* Form Card */}
