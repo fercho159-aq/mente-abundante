@@ -140,18 +140,3 @@
 .emptyState p {
     color: var(--color-text-muted);
 }
-
-/* Light Theme Overrides */
-:global([data-theme="light"]) .cardBg {
-    background: linear-gradient(145deg, #f8f0f0, #fff5f5);
-}
-
-:global([data-theme="light"]) .cardOverlay {
-    background: linear-gradient(to top,
-            rgba(255, 255, 255, 0.98) 0%,
-            rgba(255, 255, 255, 0.6) 100%);
-}
-
-:global([data-theme="light"]) .number {
-    background: rgba(128, 14, 19, 0.1);
-}
