@@ -22,7 +22,9 @@ interface SearchResult {
     page: number;
 }
 
-export default function SearchMoviesPage() {
+import { Suspense } from 'react';
+
+function SearchMoviesContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const sectionId = searchParams.get('section');
@@ -210,5 +212,13 @@ export default function SearchMoviesPage() {
                 )}
             </div>
         </main>
+    );
+}
+
+export default function SearchMoviesPage() {
+    return (
+        <Suspense fallback={<div className={styles.loading}>Cargando buscador...</div>}>
+            <SearchMoviesContent />
+        </Suspense>
     );
 }

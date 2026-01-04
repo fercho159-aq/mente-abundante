@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { query, Section } from '@/lib/db';
 import styles from './page.module.css';
 
+export const dynamic = 'force-dynamic';
+
 async function getStats() {
     const [sections, movies, videos] = await Promise.all([
         query<{ count: string }>('SELECT COUNT(*) as count FROM sections'),
