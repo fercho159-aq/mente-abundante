@@ -117,9 +117,7 @@ export default async function MovieDetailPage({ params, searchParams }: PageProp
                                 {movie.runtime && (
                                     <span>⏱️ {Math.floor(movie.runtime / 60)}h {movie.runtime % 60}min</span>
                                 )}
-                                {movie.vote_average && (
-                                    <span>⭐ {Number(movie.vote_average).toFixed(1)}</span>
-                                )}
+
                             </div>
 
                             {movie.genres && movie.genres.length > 0 && (

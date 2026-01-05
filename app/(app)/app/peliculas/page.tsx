@@ -70,9 +70,7 @@ export default async function MoviesPage() {
                                     {movie.release_date && (
                                         <span>{new Date(movie.release_date).getFullYear()}</span>
                                     )}
-                                    {movie.vote_average && (
-                                        <span className={styles.rating}>⭐ {Number(movie.vote_average).toFixed(1)}</span>
-                                    )}
+
                                 </div>
                             </div>
                         </Link>

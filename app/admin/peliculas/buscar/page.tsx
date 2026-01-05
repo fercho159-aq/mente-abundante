@@ -162,9 +162,7 @@ function SearchMoviesContent() {
                                             {movie.release_date && (
                                                 <span>{new Date(movie.release_date).getFullYear()}</span>
                                             )}
-                                            {movie.vote_average > 0 && (
-                                                <span>⭐ {Number(movie.vote_average).toFixed(1)}</span>
-                                            )}
+
                                         </div>
                                         {movie.overview && (
                                             <p className={styles.movieOverview}>{movie.overview}</p>
