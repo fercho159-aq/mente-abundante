@@ -5,10 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:mobile": "bash scripts/build-mobile.sh",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "cap:sync": "npx cap sync",
+    "cap:android": "npx cap open android",
+    "cap:ios": "npx cap open ios"
   },
   "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
     "next": "16.1.1",
@@ -17,6 +25,7 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/pg": "^8.16.0",

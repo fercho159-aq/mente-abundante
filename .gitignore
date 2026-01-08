@@ -39,3 +39,21 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Capacitor
+.mobile-temp/
+
+# Android (opcional - puedes incluir android/ si lo deseas)
+# android/
+android/app/build/
+android/.gradle/
+android/build/
+*.apk
+*.aab
+
+# iOS (opcional - puedes incluir ios/ si lo deseas)
+# ios/
+ios/App/Pods/
+ios/App/build/
+*.ipa
+*.xcworkspace

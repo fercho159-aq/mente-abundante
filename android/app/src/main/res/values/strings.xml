@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Mente Abundante</string>
+    <string name="title_activity_main">Mente Abundante</string>
+    <string name="package_name">com.menteabundante.app</string>
+    <string name="custom_url_scheme">com.menteabundante.app</string>
+</resources>
